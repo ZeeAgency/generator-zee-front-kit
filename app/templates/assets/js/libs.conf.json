@@ -1,0 +1,5 @@
+[
+  "<%= assetsPath %>/bower_components/jquery/dist/jquery.js",
+  "<%= assetsPath %>/bower_components/lodash/lodash.js",
+  "<%= assetsPath %>/bower_components/requirejs/require.js"
+]

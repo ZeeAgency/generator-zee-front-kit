@@ -1,0 +1,3 @@
+{
+  "directory": "<%= assetsPath %>/bower_components"
+}

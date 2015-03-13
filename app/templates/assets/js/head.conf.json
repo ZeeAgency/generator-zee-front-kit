@@ -1,0 +1,6 @@
+[
+  "<%= assetsPath %>/bower_components/html5shiv/dist/html5shiv.js",
+  "<%= assetsPath %>/bower_components/modernizr/modernizr.js"<% if(false) { %>,
+  "<%= assetsPath %>/bower_components/matchMedia/matchMedia.js",
+  "<%= assetsPath %>/bower_components/media-match/media.match.js"<% } %>
+]

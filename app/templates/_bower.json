@@ -1,0 +1,19 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "html5shiv": "~3.7.2",
+    "modernizr": "~2.8.3",
+    "matchMedia": "~0.2.0",
+    "media-match": "~2.0.2",
+    "jquery": "~1.11.2",
+    "requirejs": "~2.1.16",
+    "lodash": "~3.5.0",
+    "enquire": "~2.1.2",
+    "bootstrap-sass": "~3.3.3"
+  }
+}
