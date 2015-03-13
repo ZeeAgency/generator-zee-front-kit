@@ -14,6 +14,8 @@
     "requirejs": "~2.1.16",
     "lodash": "~3.5.0",
     "enquire": "~2.1.2",
-    "bootstrap-sass": "~3.3.3"
+    "bootstrap-sass": "~3.3.3",
+    "jquery-zee-slider": "~1.0.0",
+    "jquery-zee-sugar": "~1.0.0"
   }
 }
