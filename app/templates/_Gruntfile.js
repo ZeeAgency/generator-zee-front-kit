@@ -20,6 +20,13 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'concurrent:watch'
   ]);
+  
+  grunt.registerTask('start', [
+    'sass:dev',
+    'autoprefixer',
+    'bowerRequirejs',
+    'uglify'
+  ]);
 };
 
 function _loadConfig(cwd, path) {
