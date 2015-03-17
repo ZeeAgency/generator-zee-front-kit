@@ -41,7 +41,7 @@ function _loadConfig(cwd, path) {
   }).forEach(function(option) {
     key = option.replace(/\.grunt\.js$/, '');
     key = key.split('/').pop();
-    object[key] = require(cwd + option);
+    object[key] = require('./' + cwd + option);
   });
 
   return object;
