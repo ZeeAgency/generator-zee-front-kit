@@ -25,6 +25,7 @@ module.exports = function(grunt) {
     'sass:dev',
     'autoprefixer',
     'bowerRequirejs',
+    'requirejs',
     'uglify'
   ]);
 };
