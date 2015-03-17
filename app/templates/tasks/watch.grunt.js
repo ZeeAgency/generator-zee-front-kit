@@ -5,6 +5,6 @@ module.exports = {
   },
   sass: {
     files: ['<%%= pkg.assetsPath %>/scss/{,*/}*.{scss,sass}'],
-    tasks: ['sass:dev', 'autoprefixer']
+    tasks: ['sass:dev', 'autoprefixer:dist', 'notify:sass']
   }
 };
