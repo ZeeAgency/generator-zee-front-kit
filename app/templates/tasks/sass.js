@@ -5,7 +5,7 @@ module.exports = {
     precision: 10,
     compass: true,
     lineNumbers: true,
-    loadPath: '<%= assetsPath %>/bower_components'
+    loadPath: '<%%= pkg.assetsPath %>/bower_components'
   },
   dev: {
     files: [{
