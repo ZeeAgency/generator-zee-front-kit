@@ -1,5 +1,5 @@
 module.exports = {
-  target: {
+  dev: {
     rjsConfig: '<%%= pkg.assetsPath %>/js/require.conf.js'
   }
 };

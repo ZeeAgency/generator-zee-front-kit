@@ -33,12 +33,12 @@ function _loadConfig(cwd, path) {
   var glob = require('glob');
   var object = {};
   var key;
-  path = path || '*';
+  path = path || '*.grunt.js';
 
   glob.sync(path, {
     cwd: cwd
   }).forEach(function(option) {
-    key = option.replace(/\.js$/, '');
+    key = option.replace(/\.grunt\.js$/, '');
     key = key.split('/').pop();
     object[key] = require(cwd + option);
   });
