@@ -61,6 +61,7 @@ module.exports = generators.Base.extend({
     this.template('_.editorconfig', '.editorconfig');
     this.copy('_.gitignore', '.gitignore');
     this.copy('_.jshintrc', '.jshintrc');
+    this.copy('_.scss-lint.yml', '.scss-lint.yml');
     this.copy('_.bowerrc', '.bowerrc');
     this.template('_package.json', 'package.json');
     this.template('_bower.json', 'bower.json');
