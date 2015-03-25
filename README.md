@@ -1,5 +1,12 @@
 # Zee Front Kit
 
+## Installation
+    npm install -g yo
+    npm install -g generator-zee-front-kit
+
+## Usage
+    yo zee-front-kit
+
 ## Requirements
 - [Node.js & npm](https://nodejs.org/)
 - [Ruby & gem](https://www.ruby-lang.org/fr/)
