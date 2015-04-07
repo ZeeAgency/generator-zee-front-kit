@@ -28,3 +28,8 @@
 ### [SCSSLint](https://packagecontrol.io/packages/SublimeLinter-contrib-scss-lint)
     gem install scss-lint 
     Package Control: Install Package > "SublimeLinter-contrib-scss-lint"
+
+## Sass plugins
+
+    gem install --pre sass-css-importer
+    gem install sass-globbing

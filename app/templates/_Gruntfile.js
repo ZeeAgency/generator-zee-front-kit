@@ -18,15 +18,25 @@ module.exports = function(grunt) {
   grunt.initConfig(config);
 
   grunt.registerTask('default', [
-    'concurrent:watch'
+    'start',
+    'watch'
   ]);
-  
+
   grunt.registerTask('start', [
+    'build:css',
+    'build:js'
+  ]);
+
+  grunt.registerTask('build:css', [
     'sass:dev',
     'autoprefixer',
+    'notify:css'
+  ]);
+
+  grunt.registerTask('build:js', [
     'bowerRequirejs',
-    'requirejs',
-    'uglify'
+    'uglify',
+    'notify:js'
   ]);
 };
 

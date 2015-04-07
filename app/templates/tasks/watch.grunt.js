@@ -3,8 +3,12 @@ module.exports = {
     files: ['bower.json'],
     tasks: ['bowerRequirejs']
   },
-  sass: {
-    files: ['<%%= pkg.assetsPath %>/scss/{,*/}*.{scss,sass}'],
-    tasks: ['sass:dev', 'autoprefixer:dist', 'notify:sass']
+  css: {
+    files: ['<%%= pkg.assetsPath %>/scss/**/*.{scss,sass}'],
+    tasks: ['build:css']
+  },
+  js: {
+    files: ['<%%= pkg.assetsPath %>/js/**/*.{js,json}'],
+    tasks: ['build:js']
   }
 };
