@@ -1,8 +1,14 @@
 module.exports = {
-  sass: {
+  css: {
     options: {
       title: 'Grunt',
-      message: 'Sass & Autoprefixer compilation done !'
+      message: 'CSS compilation done !'
+    }
+  },
+  js: {
+    options: {
+      title: 'Grunt',
+      message: 'JS compilation done !'
     }
   }
-}
+};

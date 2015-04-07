@@ -35,6 +35,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build:js', [
     'bowerRequirejs',
+    'requirejs:main',
     'uglify',
     'notify:js'
   ]);

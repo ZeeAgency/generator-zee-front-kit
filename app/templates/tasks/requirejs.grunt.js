@@ -22,7 +22,7 @@ module.exports = {
         start: '(function($){',
         end: '})(jQuery);'
       },
-      optimizeCss: "none"
+      optimizeCss: 'none'
     }
   }
 };
