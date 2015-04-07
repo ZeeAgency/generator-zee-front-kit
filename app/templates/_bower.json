@@ -17,6 +17,7 @@
     "enquire": "~2.1.2",
     "bootstrap-sass": "~3.3.3",
     "jquery-zee-slider": "~1.0.0",
-    "jquery-zee-sugar": "~1.0.0"
+    "jquery-zee-sugar": "~1.0.0",
+    "zee-sass-kit": "~1.0.0"
   }
 }
