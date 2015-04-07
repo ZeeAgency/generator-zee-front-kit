@@ -12,13 +12,11 @@ module.exports = generators.Base.extend({
 
   prompting: function() {
     var done = this.async();
-
     var prompts = [{
       type    : 'input',
       name    : 'name',
       message : 'Your project name',
-      store: true,
-      default : this.config.get('name') || this.appname
+      default : this.appname
     }, {
       type    : 'input',
       name    : 'assetsPath',
@@ -31,8 +29,7 @@ module.exports = generators.Base.extend({
       message: 'Which Backend?',
       choices: [{
         name: 'PHP Framework',
-        value: 'psr2',
-        checked: true
+        value: 'psr2'
       }, {
         name: 'Drupal',
         value: 'drupal'
@@ -42,11 +39,14 @@ module.exports = generators.Base.extend({
       }, {
         name: 'Node.js',
         value: 'nodejs'
-      }]
+      }],
+      store: true,
+      default : this.config.get('backend') || 'psr2'
     }];
 
     this.prompt(prompts, function (answers) {
       this.config.set('name', answers.name);
+      this.config.set('assetsPath', answers.assetsPath);
       this.config.set('backend', answers.backend);
 
       this.appname = answers.name;
@@ -58,18 +58,18 @@ module.exports = generators.Base.extend({
   },
 
   configuring: function() {
+    this.template('_.bowerrc', '.bowerrc');
     this.template('_.editorconfig', '.editorconfig');
-    this.copy('_.gitignore', '.gitignore');
-    this.copy('_.jshintrc', '.jshintrc');
-    this.copy('_.jsbeautifyrc', '.jsbeautifyrc');
-    this.copy('_.scss-lint.yml', '.scss-lint.yml');
-    this.copy('_.bowerrc', '.bowerrc');
-    this.template('_package.json', 'package.json');
+    this.template('_.gitignore', '.gitignore');
+    this.template('_.jsbeautifyrc', '.jsbeautifyrc');
+    this.template('_.jshintrc', '.jshintrc');
+    this.template('_.scss-lint.yml', '.scss-lint.yml');
     this.template('_bower.json', 'bower.json');
-
+    this.template('_config.rb', 'config.rb');
     this.template('_Gruntfile.js', 'Gruntfile.js');
-    this.directory('tasks');
+    this.template('_package.json', 'package.json');
 
+    this.directory('tasks');
     this.directory('assets', this.assetsPath);
   },
 
