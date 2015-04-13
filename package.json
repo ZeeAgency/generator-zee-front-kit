@@ -1,6 +1,6 @@
 {
   "name": "generator-zee-front-kit",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Zee Agency's generator for front-end basic setup",
   "main": "app/index.js",
   "scripts": {
