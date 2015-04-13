@@ -8,7 +8,10 @@ module.exports = {
     tasks: ['build:css']
   },
   js: {
-    files: ['<%%= pkg.assetsPath %>/js/**/*.{js,json}'],
+    files: [
+      '<%%= pkg.assetsPath %>/js/**/*.{js,json}',
+      '!<%%= pkg.assetsPath %>/js/**/*.{min,build}.*'
+    ],
     tasks: ['build:js']
   }
 };
